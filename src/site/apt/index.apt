@@ -1,0 +1,77 @@
+	---
+	Kettle date dimension plugin
+	---
+	
+Introduction
+
+	This plugin supply a function to resolve, and insert if it doesn't exist, 
+	the date dimension. It calculates all calendar data and you must supply
+	the table info used to save the information.
+	
+* Installation
+
+	To install the plugin download from {{http://sourceforge.net/projects/su4jd/files/}},
+	create a folder (for example DateDim) under [kettle home]/plugins/steps/.
+	Copy the jar in the new folder and extract only the files <plugin.xml>
+	and <DateDimension.png>.
+	Start kettle and enjoy!
+
+* Usage
+
+	To use the plugin open the <Data Warehouse> category and use the <Date Dimension>
+	plugin. Open the plugin, you can see all fields:
+	
+	* Step name
+	
+	* Connection : The database connection to use
+	
+	* Input variable : The variable name that contains the date to analyze.
+	  
+	* Id date variable name : the name of the variable where to save the id of the dimension
+	
+	* Table name : the name of the table dimension
+	
+	* Id column : Column name of the id
+	
+	* Timestamp column : Column name where to save the timestamp
+	
+	* Year column : Column name where to save the year (example 2010)
+	
+	* Month column :  Column name where to save the month (1 to 12)
+	
+	* Day column :  Column name where to save the day (1 to 31)
+	
+	* Hour column : Column name where to save the hour (0 to 23)
+	
+	* Minute column : Column name where to save the minutes (0 to 59)
+	
+	* Day of week column : Column name where to save the day of the week (1=Monday to 7=Sunday)
+	
+	* Week column : Column name where to save the number of the week in the year
+	
+	* Two month column : Column name where to save the number of the two month ( 1 to 6 )
+		
+	* Tree month column : Column name where to save the number of the tree month ( 1 to 4 )	
+	
+	* Four month column : Column name where to save the number of the four month ( 1 to 3 )
+	
+	* Six month column : Column name where to save the number of the six month ( 1 to 2 )
+	
+	All column names are optional but there are 5 columns that are mandatory and if the name aren't
+	set, default names will used. The mandatory columns are :
+	
+*------------------*--------------*
+| <<Mandatory column>> | <<Default name>>     
+*------------------*--------------
+| Id column        | ID     
+*------------------*--------------
+|Year column       |YEAR
+*------------------*--------------
+|Month column      |MONTH
+*------------------*--------------
+|Day column        |DAY
+*------------------*--------------
+|Four month column |FOUR_MONTHS
+*------------------*--------------
+
+	

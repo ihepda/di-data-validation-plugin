@@ -1,0 +1,11 @@
+kettle-date-dimension-plugin
+
+	<<Release 1.1>> 
+	
+	Correct the output of the plugin. In release 1.0 the plugin released only the id column 
+	without all other data.
+	
+	<<Release 1.0>>
+	
+	First release.
+	 

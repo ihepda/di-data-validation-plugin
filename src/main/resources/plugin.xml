@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+   id="DataValidationPlugin"
+   iconfile="DataValidation.png"
+   description="Data Validation Plugin"
+   tooltip="This is a kettle plugin used to validate data in the stream"
+   category="Data Warehouse"
+   classname="it.claudio.dangelo.kettle.plugin.datacheck.DataCheckMetaInterface">
+   <libraries>
+    <library name="${project.build.finalName}.jar"/>
+    <library name="dom4j-1.6.1.jar"/>
+    <library name="guava-11.0.2.jar"/>
+    <library name="javassist-3.12.1.GA.jar"/>
+    <library name="jsr305-1.3.9.jar"/>
+    <library name="reflections-0.9.8.jar"/>
+    </libraries>
+    
+   <localized_category>
+     <category locale="en_US">Data Warehouse</category>
+   </localized_category>
+   <localized_description>
+     <description locale="en_US">Data Validation</description>
+   </localized_description>
+   <localized_tooltip>
+     <tooltip locale="en_US">This is a kettle plugin used to validate data in the stream</tooltip>
+   </localized_tooltip>
+   
+</plugin>

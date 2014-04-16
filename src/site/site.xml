@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SU4JD - Kettle Date Dimension plugin">
+  <publishDate position="navigation-top" format="dd-MM-yyyy"/>
+  <body>
+    <links>
+      <item name="SU4JD" href="http://su4jd.sourceforge.net" />
+    </links>
+
+    <menu name="Menu">
+      <item name="Introduction" href="index.html"/>
+      <item name="Download" href="http://sourceforge.net/projects/su4jd/files/"/>
+      <item name="Release Notes" href="release-notes.html" />
+      <item name="Road Map" href="roadmap.html" />
+    </menu>
+    <menu ref="reports"/>
+  </body>
+</project>
